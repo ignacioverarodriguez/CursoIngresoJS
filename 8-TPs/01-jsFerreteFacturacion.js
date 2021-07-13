@@ -17,11 +17,15 @@ function Sumar ()
 {
     var suma;
 
-    precio1=parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2=parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3=parseInt(document.getElementById("txtIdPrecioTres").value);
+    precio1=document.getElementById("txtIdPrecioUno").value;
+    precio2=document.getElementById("txtIdPrecioDos").value;
+    precio3=document.getElementById("txtIdPrecioTres").value;
 
-    suma= (precio1 + precio2 + precio3);
+    precio1=parseInt(precio1);
+    precio2=parseInt(precio2);
+    precio3=parseInt(precio3);
+
+    suma=(precio1 + precio2 + precio3);
 
     mensaje = suma;
 
@@ -32,11 +36,15 @@ function Promedio ()
 {
     var media;
 
-    precio1=parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2=parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3=parseInt(document.getElementById("txtIdPrecioTres").value);
+    precio1=document.getElementById("txtIdPrecioUno").value;
+    precio2=document.getElementById("txtIdPrecioDos").value;
+    precio3=document.getElementById("txtIdPrecioTres").value;
 
-    media= (precio1 + precio2 + precio3)/3;
+    precio1=parseInt(precio1);
+    precio2=parseInt(precio2);
+    precio3=parseInt(precio3);
+
+    media=(precio1 + precio2 + precio3)/3;
 
     mensaje = media;
 
@@ -47,11 +55,15 @@ function PrecioFinal ()
     var final;
     var iva;
 
-    precio1=parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2=parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3=parseInt(document.getElementById("txtIdPrecioTres").value);
+    precio1=document.getElementById("txtIdPrecioUno").value;
+    precio2=document.getElementById("txtIdPrecioDos").value;
+    precio3=document.getElementById("txtIdPrecioTres").value;
 
-    final= (precio1 + precio2 + precio3);
+    precio1=parseInt(precio1);
+    precio2=parseInt(precio2);
+    precio3=parseInt(precio3);
+
+    final=(precio1 + precio2 + precio3);
 
     iva= final * 0.21;
 
